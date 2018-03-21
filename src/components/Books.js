@@ -11,7 +11,7 @@ class Books extends Component {
             return (
               <a key={index} className="book" href={infoLink} target="_blank">
                 <img src={ imageLinks !== undefined ? imageLinks.thumbnail :missingpic }
-                alt={title} className="book-text" />
+                alt={title} className="book-img" />
                 <div className="book-text">{ title }</div>
               </a>
             );

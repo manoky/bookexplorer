@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Books from './Books';
-import {FormGroup, FormControl,InputGroup, Glyphicon } from 'react-bootstrap';
+import { FormGroup, FormControl, InputGroup, Glyphicon } from "react-bootstrap";
 
 class PlatForm extends Component {
   constructor(props){
@@ -34,13 +34,15 @@ class PlatForm extends Component {
                     event.preventDefault();
                   }
                 }} />
-              <InputGroup.Addon onclick={()=> this.search()}>
-                <Glyphicon glyph='search'/>
+              <InputGroup.Addon onClick={()=> this.search()}>
+                <Glyphicon glyph="search" />
               </InputGroup.Addon>
             </InputGroup>
           </FormGroup>
         </form>
+        <div className="books-all">
           <Books items={this.state.items}/>
+        </div>
       </div>
     );
   }
